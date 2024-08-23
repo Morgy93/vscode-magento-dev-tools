@@ -14,10 +14,6 @@
   "contributes": {
     "commands": [
       {
-        "command": "vscode-magento-dev-tools.helloWorld",
-        "title": "Hello World"
-      },
-      {
         "command": "vscode-magento-dev-tools.addThemePath",
         "title": "Add Theme Path"
       }

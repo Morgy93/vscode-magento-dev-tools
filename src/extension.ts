@@ -4,15 +4,10 @@ import { ConfigurationTarget } from 'vscode';
 export function activate(context: vscode.ExtensionContext) {
 	console.log('Congratulations, your extension "vscode-magento-dev-tools" is now active!');
 
-	const helloWorldDisposable = vscode.commands.registerCommand('vscode-magento-dev-tools.helloWorld', () => {
-		vscode.window.showInformationMessage('Hello World from VSCode Magento Dev Tools!');
-	});
-
 	const addThemePathDisposable = vscode.commands.registerCommand('vscode-magento-dev-tools.addThemePath', async () => {
 		await addThemePath();
 	});
 
-	context.subscriptions.push(helloWorldDisposable);
 	context.subscriptions.push(addThemePathDisposable);
 }
 

@@ -16,8 +16,26 @@
       {
         "command": "vscode-magento-dev-tools.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "vscode-magento-dev-tools.addThemePath",
+        "title": "Add Theme Path"
       }
-    ]
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Magento Dev Tools Configuration",
+      "properties": {
+        "magentoDevTools.themePaths": {
+          "type": "array",
+          "description": "Paths to local directories representing Magento 2 themes",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",

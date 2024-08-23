@@ -24,8 +24,7 @@ For example:
 
 This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+* `magentoDevTools.themePaths`: Paths to local directories representing Magento 2 themes.
 
 ## Known Issues
 

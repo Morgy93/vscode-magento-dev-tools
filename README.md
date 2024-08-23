@@ -26,6 +26,18 @@ This extension contributes the following settings:
 
 * `magentoDevTools.themePaths`: Paths to local directories representing Magento 2 themes.
 
+## New Feature: Copy to Theme
+
+This extension now includes a right-click context menu for files in the vendor directory. When you right-click on a file, you will see an option "Copy to Theme". This option will display the current themes configured in the `magentoDevTools.themePaths` setting. Selecting a theme will copy the right-clicked file into the selected theme directory.
+
+### Usage
+
+1. Configure your theme paths by running the "Add Theme Path" command.
+2. Right-click on a file in the vendor directory.
+3. Select "Copy to Theme" from the context menu.
+4. Choose the desired theme from the list.
+5. The file will be copied to the selected theme directory.
+
 ## Known Issues
 
 Calling out known issues can help limit users opening duplicate issues against your extension.

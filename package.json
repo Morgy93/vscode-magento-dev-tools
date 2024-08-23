@@ -16,6 +16,10 @@
       {
         "command": "vscode-magento-dev-tools.addThemePath",
         "title": "Add Theme Path"
+      },
+      {
+        "command": "vscode-magento-dev-tools.copyToTheme",
+        "title": "Copy to Theme"
       }
     ],
     "configuration": {
@@ -31,6 +35,15 @@
           "default": []
         }
       }
+    },
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "vscode-magento-dev-tools.copyToTheme",
+          "when": "resourceExtname == .php && resourcePath =~ /vendor/",
+          "group": "navigation"
+        }
+      ]
     }
   },
   "scripts": {
